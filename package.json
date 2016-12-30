@@ -1,0 +1,24 @@
+{
+  "name": "testwords",
+  "version": "1.0.1",
+  "description": "Simple arrays of words used in common vocabulary tests such as TOEFL and SAT",
+  "main": "testwords.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "bahai",
+    "tts",
+    "ipn"
+  ],
+  "author": "Chad Jones <chadananda@gmail.com> ",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chadananda/testwords.git"
+  },
+  "bugs": {
+    "url": "https://github.com/chadananda/testwords/issues"
+  },
+  "homepage": "https://github.com/chadananda/testwords#readme"
+}
