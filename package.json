@@ -1,6 +1,6 @@
 {
   "name": "testwords",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Simple arrays of words used in common vocabulary tests such as TOEFL and SAT",
   "main": "testwords.js",
   "scripts": {

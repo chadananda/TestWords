@@ -17,7 +17,27 @@ testwords.sat
 // array of top 500 words used in SAT tests
 ```
  
- 
+``` Javascript
+var words = {
+    sat: [
+          'abate',
+          'aberration',
+          'abhor',
+          'abhorrence',
+...
+    ],
+    toefl: [
+      'abandon',
+      'abash',
+      'abdicate',
+      'abet',
+...
+    ]
+};
+
+module.exports.testwords = words;
+```
+
  
 ### TODO
 
