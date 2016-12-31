@@ -40,6 +40,5 @@ module.exports.testwords = words;
 
  
 ### TODO
-
-* Add SAT
+ 
 * Identify and add other lists that might be useful
