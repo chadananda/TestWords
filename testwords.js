@@ -1,3 +1,27 @@
+
+export function wordlist() {
+  return words;
+}
+
+export function wordobj() {
+  var result = {toefl: {}, sat: {}, allwords: {}}
+  for (var i = 0; i < words.toefl.length; ++i) {
+    let word = words.toefl[i];
+    if (word !== undefined) {
+      result.toefl[word] = 1;
+      result.allwords[word] = 1;
+    }
+  }
+  for (var i = 0; i < words.sat.length; ++i) {
+    let word = words.sat[i];
+    if (word !== undefined) {
+      result.sat[word] = 1;
+      result.allwords[word] = 1;
+    }
+  } 
+  return result;
+}
+
 var words = {
     sat: [
           'abate',

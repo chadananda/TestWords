@@ -1,15 +1,14 @@
 {
   "name": "testwords",
-  "version": "1.0.4",
+  "version": "1.0.6",
   "description": "Simple arrays of words used in common vocabulary tests such as TOEFL and SAT",
   "main": "testwords.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [
-    "bahai",
-    "tts",
-    "ipn"
+  "keywords": [ 
+    "sat",
+    "toefl"
   ],
   "author": "Chad Jones <chadananda@gmail.com> ",
   "license": "ISC",
