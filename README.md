@@ -10,33 +10,35 @@ npm install --save testwords
 ### Functionality
 ``` Javascript
 var testwords = require('testwords'); 
+// or ES6
+import Testwords from 'testwords'
 
-testwords.toefl
-// array of top 500 words used in TOEFL tests
-testwords.sat
-// array of top 500 words used in SAT tests
+
+
+var testwords = new Testwords()
+
+// returns array of top words used in SAT tests
+testwords.satWordsList() 
+
+// returns array of top words used in TOEFL tests
+testwords.toeflWordsList() 
+
+// returns array of all words without duplication
+testwords.allWordsList() 
+
+// Check an individual word is in TOEFL or SAT. Not case sensitive.
+// For more accuracy, normalize your word first with an NLP tool
+//   such as "compromise" (https://www.npmjs.com/package/compromise)
+testwords.isSAT('convivial')
+  // true
+testwords.isTOEFL('convivial')
+  // false
+testwords.isTestword('convivial')
+  // true
+
 ```
+  
  
-``` Javascript
-var words = {
-    sat: [
-          'abate',
-          'aberration',
-          'abhor',
-          'abhorrence',
-...
-    ],
-    toefl: [
-      'abandon',
-      'abash',
-      'abdicate',
-      'abet',
-...
-    ]
-};
-
-module.exports.testwords = words;
-```
 
  
 ### TODO

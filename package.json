@@ -1,10 +1,10 @@
 {
   "name": "testwords",
-  "version": "1.0.6",
-  "description": "Simple arrays of words used in common vocabulary tests such as TOEFL and SAT",
+  "version": "1.0.8",
+  "description": "Words used in common vocabulary tests such as TOEFL and SAT",
   "main": "testwords.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha"
   },
   "keywords": [ 
     "sat",
@@ -19,5 +19,9 @@
   "bugs": {
     "url": "https://github.com/chadananda/testwords/issues"
   },
-  "homepage": "https://github.com/chadananda/testwords#readme"
+  "homepage": "https://github.com/chadananda/testwords#readme",
+  "devDependencies": {
+    "chai": "^3.5.0",  
+    "mocha": "^3.2.0"
+  }
 }
