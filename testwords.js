@@ -1,7 +1,43 @@
 // function for checking if a word is on the toefl or sat wordlists
+'use strict'
+
+// module.exports = class {
+//   constructor() { 
+//     let that = this
+//     this.sat = {};
+//      words.sat.map(function(word) {that.sat[word]=true}) 
+//     this.toefl = {};
+//      words.toefl.map(function(word){that.toefl[word]=true})      
+//     this.allwords = Object.assign({}, this.sat, this.toefl);
+
+//     this.isSATword = function(word) {
+//       word = word.toLowerCase().trim(); 
+//       return (this.sat[word]===true);
+//     }
+//     this.isTOEFLword = function(word) {
+//       word = word.toLowerCase().trim(); 
+//       return (this.toefl[word]===true);
+//     }
+//     this.isTestword = function(word) {
+//       word = word.toLowerCase().trim(); 
+//       return (this.allwords[word]===true);
+//     }
+//     this.satWordsList = function() {
+//       return Object.keys(this.sat);
+//     }
+//     this.toeflWordsList = function() {
+//       return Object.keys(this.sat);
+//     }
+//     this.allWordsList = function() {
+//       let allWordsList= Array.concat(this.satWords(), this.toeflWord());
+//       allWordsList= Array.from(new Set(allWordsList));
+//       return allWordsList;   
+//     }   
+//   } 
+// }
 
 
-module.exports = class {
+class Testwords {
   constructor() { 
     let that = this
     this.sat = {};
@@ -9,33 +45,36 @@ module.exports = class {
     this.toefl = {};
      words.toefl.map(function(word){that.toefl[word]=true})      
     this.allwords = Object.assign({}, this.sat, this.toefl);
-
-    this.isSATword = function(word) {
-      word = word.toLowerCase().trim(); 
-      return (this.sat[word]===true);
-    }
-    this.isTOEFLword = function(word) {
-      word = word.toLowerCase().trim(); 
-      return (this.toefl[word]===true);
-    }
-    this.isTestword = function(word) {
-      word = word.toLowerCase().trim(); 
-      return (this.allwords[word]===true);
-    }
-    this.satWordsList = function() {
-      return Object.keys(this.sat);
-    }
-    this.toeflWordsList = function() {
-      return Object.keys(this.sat);
-    }
-    this.allWordsList = function() {
-      let allWordsList= Array.concat(this.satWords(), this.toeflWord());
-      allWordsList= Array.from(new Set(allWordsList));
-      return allWordsList;   
-    }   
   } 
+ 
+  isSATword (word) {
+    word = word.toLowerCase().trim(); 
+    return (this.sat[word]===true);
+  }
+  isTOEFLword (word) {
+    word = word.toLowerCase().trim(); 
+    return (this.toefl[word]===true);
+  }
+  isTestword (word) {
+    word = word.toLowerCase().trim(); 
+    return (this.allwords[word]===true);
+  }
+  satWordsList () {
+    return Object.keys(this.sat);
+  }
+  toeflWordsList () {
+    return Object.keys(this.sat);
+  }
+  allWordsList () {
+    let allWordsList= Array.concat(this.satWords(), this.toeflWord());
+    allWordsList= Array.from(new Set(allWordsList));
+    return allWordsList;   
+  }   
+
 }
 
+// export default Testwords;
+module.exports = Testwords
 
 
 var words = {
